@@ -1,0 +1,4 @@
+# Directed graph: /home/L/flink/BigDataBench-Graph/DataGenerator/data-Connected_Components/Facebook_genGragh_2.txt 
+# Kronecker Graph: seed matrix [0.8301 0.558; 0.4638 0.3019]
+# Each Number representatives a Node
+# FromNodeId	ToNodeId

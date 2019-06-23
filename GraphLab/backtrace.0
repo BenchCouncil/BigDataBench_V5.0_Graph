@@ -1,0 +1,46 @@
+Pointers
+------------
+0x7f8d582de6dc
+0x7f8d57a634d7
+0x7f8d581e50e6
+0x7f8d581e5355
+0x7f8d58851096
+0x5940c8
+0x7f8d582d39a8
+0x7f8d58655720
+0x7f8d58656ab8
+0x7f8d590da16a
+0x7f8d59b8052a
+0x7f8d56ba922d
+Raw
+------------
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(_Z18__print_back_tracev+0x8c) [0x7f8d582de6dc]
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(+0x2c04d7) [0x7f8d57a634d7]
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(_ZN8graphlab14segment_sarrayESt10shared_ptrINS_6sarrayINS_13flexible_typeEEEERKSt6vectorImSaImEE+0xde6) [0x7f8d581e50e6]
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(_ZN8graphlab6sgraph16add_vertex_fieldESt10shared_ptrINS_6sarrayINS_13flexible_typeEEEESs+0x135) [0x7f8d581e5355]
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(_ZN8graphlab12unity_sgraph16add_vertex_fieldESt10shared_ptrINS_17unity_sarray_baseEESs+0x1a6) [0x7f8d58851096]
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/unity_server(_ZN6cppipc13dispatch_implIN8graphlab17unity_sgraph_baseEMS2_FSt10shared_ptrIS2_ES3_INS1_17unity_sarray_baseEESsEE7executeEPvPNS_11comm_serverERNS1_8iarchiveERNS1_8oarchiveE+0x1a8) [0x5940c8]
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(_ZN6cppipc11comm_server8callbackERN8libfault14zmq_msg_vectorES3_+0x788) [0x7f8d582d39a8]
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(_ZN8libfault18async_reply_socket11process_jobEPNS0_11thread_dataEPNS_14zmq_msg_vectorE+0x630) [0x7f8d58655720]
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(_ZN8libfault18async_reply_socket15thread_functionEPNS0_11thread_dataE+0xe8) [0x7f8d58656ab8]
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(+0x193716a) [0x7f8d590da16a]
+/lib64/libpthread.so.0(+0x752a) [0x7f8d59b8052a]
+/lib64/libc.so.6(clone+0x6d) [0x7f8d56ba922d]
+
+Demangled
+------------
+__print_back_trace()
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(+0x2c04d7)
+graphlab::segment_sarray(std::shared_ptr<graphlab::sarray<graphlab::flexible_type> >, std::vector<unsigned long, std::allocator<unsigned long> > const&)
+graphlab::sgraph::add_vertex_field(std::shared_ptr<graphlab::sarray<graphlab::flexible_type> >, std::string)
+graphlab::unity_sgraph::add_vertex_field(std::shared_ptr<graphlab::unity_sarray_base>, std::string)
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/unity_server(_ZN6cppipc13dispatch_implIN8g
+cppipc::comm_server::callback(libfault::zmq_msg_vector&, libfault::zmq_msg_vector&)
+libfault::async_reply_socket::process_job(libfault::async_reply_socket::thread_data*, libfault::zmq_msg_vector*)
+libfault::async_reply_socket::thread_function(libfault::async_reply_socket::thread_data*)
+/home/sunny/Development/anaconda2/envs/dato-env/lib/python2.7/site-packages/graphlab/libunity_shared.so(+0x193716a)
+/lib64/libpthread.so.0(+0x752a)
+/lib64/libc.so.6(clone+0x6d)
+-------------------------------------------------------
+
+

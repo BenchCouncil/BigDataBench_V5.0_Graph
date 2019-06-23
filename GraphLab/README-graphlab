@@ -1,0 +1,44 @@
+graphlab create
+-----------
+How to use:
+download the package
+
+Preparations:
+Make sure GraphLab Create 1.7.1 ,Dato Distributed and python 2.7.9 has been successfully installed.
+if you use python 2.7.10,there may be some error.
+
+Configure you bash environment:
+  source activate dato-env
+
+The workloads inculde:
+  BreadthFirstSearch,PageRank,ConnectedComponent,TriangleCount
+
+How to run:
+Assume the package  locates in $PACAKAGE.
+    run:
+	./$PACAKAGE/main.py
+    example:
+	/home/sunny/example/bench/main.py
+
+    parameters:
+    <data_file>: the path of input data, for example: /test/data.txt
+    <save_file>: the path to save the result
+    <algorithms>:the algorithms you want to run,for example:bfs
+    <parameters>:the parameters you want to change,details in following
+    <distrib>:choose distrib model to run program
+
+input data format:
+    from_vertex to_vertex
+      for example:
+      1 2
+      1 3
+      2 5
+      4 6
+      6 7
+
+algorithms and parameters:
+    BreadthFirstSearch: bfs <source_vertex:default 1> ,example: bfs 1
+    ConnectedComponent: cc ,example: cc
+    PageRank: pr <max_iterations:default 30> <resetProb:default 0.15> ,example: pr 30 0.15
+    TriangleCount: tc ,example:tc
+    

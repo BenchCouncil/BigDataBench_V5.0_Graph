@@ -1,0 +1,11 @@
+How to use:
+
+Spark Version Requirement: 1.4.0 or more
+1. Generate data by using the script in the dir of ../DataGenerator
+2. Set the parameters in the run_graph.sh, such as SPARK_HOME, INPUT_PATH, OUTPUT_PATH (the full path of hdfs, e.g. hdfs://localhost:9000/path)
+3. Set the parameters for algorithms you wanna to run, which are in the run_graph.sh, each if bound
+4. Run the run_graph.sh, select the algorithm you wanna to run
+
+Notes:
+You may get the error like "java.io.FileNotFoundException: hdfs:/hw005:9000/spark-graph-out/cc_1449716066214_runTime", but it seems no effect on the real running of the benchmarks
+
